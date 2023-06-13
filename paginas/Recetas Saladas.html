@@ -8,6 +8,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <!-- Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,20 +19,36 @@
 <body class="cuerpo">
     <div>
      <header class="encabezado">
-        <nav>
-            <div class="logo">
+        <div class="logo">
                 <img width="325px" src="../img/WhatsApp Image 2023-05-09 at 18.58.52.jpeg"><!-- Logo principal -->
-            </div>
-                <ul class="menu"> <!--MENU DE NAVEGACION  -->
-                        <li class="menu"><a href="../index.html">Inicio</a></li>
-                        <li class="menu"><a href="../paginas/Recetas Dulces.html">Recetas Dulces</a></li>
-                        <li class="menu"> Recetas Saladas</a></li>
-                        <li class="menu"><a href="../paginas/Galeria.html">Galeria</a></li>
-                        <li class="menu"><a href="../paginas/Contacto.html">Contacto</a></li>
-                        
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid barra1">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                  <a class="nav-link active fuentes" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" aria-current="page" href="../paginas/Recetas Dulces.html">Recetas Dulces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Recetas Saladas.html">Recetas Saladas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Contacto.html">Contacto</a>
+                  </li>
                 </ul>
-                
-        </nav>
+              </div>
+            </div>        
+    </nav>       
         
     </header>
     </div>
@@ -42,7 +60,7 @@
         <div class="centrarimagen">
         <img src="https://th.bing.com/th/id/OIP.mz5Wl_oqw1_-MMrrsN76xAHaEK?pid=ImgDet&rs=1" width="400px"><!-- Imagen de la receta -->
         </div>
-        <p>Los chipá no dejan de ser pequeños panecillos que se elaboran con harina de mandioca y harina de trigo y que están bien cargados de queso. Típicos de la cocina guaraní de Paraguay, estos panes que apenas necesitan levado suelen consumirse en el desayuno, aunque también para acompañar platos principales.</p>
+        <p class="intro">Los chipá no dejan de ser pequeños panecillos que se elaboran con harina de mandioca y harina de trigo y que están bien cargados de queso. Típicos de la cocina guaraní de Paraguay, estos panes que apenas necesitan levado suelen consumirse en el desayuno, aunque también para acompañar platos principales.</p>
     </main>
     <section><!-- Desarrollo de la receta -->
         <article>
@@ -77,10 +95,9 @@
     </section>
     <aside> <!-- barra lateral -->
             <h4 class="titulo4">¿Con qué acompañar la receta de chipá caseros?</h4>
-            <p>Como decimos, los chipá se toman tanto para el desayuno (acompañado de tereré rupa, una bebida a base de yerba mate típica de Paraguay), pero también podéis sustituir con ellos el pan habitual o servirlo con ciertos platos y cortes de carne de la cocina argentina y brasileña como la entraña, el vacío, la tira de asado o la picaña.</p>
+            <p class="intro">Como decimos, los chipá se toman tanto para el desayuno (acompañado de tereré rupa, una bebida a base de yerba mate típica de Paraguay), pero también podéis sustituir con ellos el pan habitual o servirlo con ciertos platos y cortes de carne de la cocina argentina y brasileña como la entraña, el vacío, la tira de asado o la picaña.</p>
     </aside>
     <footer class="flexfooter"><!-- Pie de pagina -->
-        <p> Seguinos en nuestras Redes Sociales</p>
         <img  class="logo"src="../img/WhatsApp Image 2023-05-09 at 18.58.52.jpeg" alt="Logo" width="180px">
 
     </footer>

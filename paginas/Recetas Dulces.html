@@ -8,6 +8,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <!-- Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +18,35 @@
 </head>
 <body class="cuerpo">
     <header class="encabezado"><!-- Encabezado -->
-        <nav><!-- Menu navegador -->
-            <div class="logo">
-                <img width="325px" src="../img/WhatsApp Image 2023-05-09 at 18.58.52.jpeg">
-            </div>
-                    <ul class="menu">
-                        <li class="menu"><a href="../index.html">Inicio</a></li>
-                        <li class="menu">Recetas Dulces</a></li>
-                        <li class="menu"><a href="Recetas Saladas.html">Recetas Saladas</a></li>
-                        <li class="menu"><a href="Galeria.html">Galeria</a></li>
-                        <li class="menu"><a href="Contacto.html">Contacto</a></li>
+        <div class="logo">
+            <img width="325px" src="../img/WhatsApp Image 2023-05-09 at 18.58.52.jpeg">
+        </div> <!-- Menu navegador -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid barra1">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                      <a class="nav-link active fuentes" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fuentes" aria-current="page" href="../paginas/Recetas Dulces.html">Recetas Dulces</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fuentes" href="../paginas/Recetas Saladas.html">Recetas Saladas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fuentes" href="../paginas/Galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fuentes" href="../paginas/Contacto.html">Contacto</a>
+                      </li>
                     </ul>
+                  </div>
+                </div>        
         </nav>
     </header>
     <main>
@@ -36,7 +56,7 @@
             <div class="centrarimagen">
                 <img src="https://i.pinimg.com/originals/ae/65/d0/ae65d07fc9a9d6b565f2d9f9da7b041f.jpg" width="350 px">
             </div>
-            <p>Los alfajores constan de dos galletas elaboradas con harina de maíz, que se deshacen en la boca al comerlas. Su elaboración es similar a las galletas tradicionales de mantequilla, pero estas van rellenas de dulce de leche, lo que convierte los alfajores en un bocado muy goloso.Lo más importante de esta receta es no pasarnos con el tiempo de horneado de las galletitas ya que no nos interesa que queden resecas, sino que estén blanditas y jugosas. Para el relleno, utilizaremos un dulce de leche de buena calidad, que sea denso, así no se nos desparramará cuando cerremos los alfajores.</p>
+            <p class="intro">Los alfajores constan de dos galletas elaboradas con harina de maíz, que se deshacen en la boca al comerlas. Su elaboración es similar a las galletas tradicionales de mantequilla, pero estas van rellenas de dulce de leche, lo que convierte los alfajores en un bocado muy goloso.Lo más importante de esta receta es no pasarnos con el tiempo de horneado de las galletitas ya que no nos interesa que queden resecas, sino que estén blanditas y jugosas. Para el relleno, utilizaremos un dulce de leche de buena calidad, que sea denso, así no se nos desparramará cuando cerremos los alfajores.</p>
 
         </div>
     </main>

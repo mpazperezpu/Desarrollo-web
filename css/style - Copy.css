@@ -1,6 +1,3 @@
-
-
-/*# sourceMappingURL=style.css.map */
 html{
     font-size: 62.5%;
 }
@@ -21,6 +18,7 @@ html{
 }
 .titulo1{
     color: #3d405b;
+    background-color:antiquewhite;
     text-align: center;
     padding: 50px;
     margin-bottom: 50px;
@@ -252,7 +250,6 @@ form{
     margin-top: 20px;
     margin-left: 15px;
 }
-iframe
 .grid-galeria{
     display: grid;
     grid-template-columns: 50% auto;
@@ -269,118 +266,4 @@ footer p{
 }
 .logo{
     align-self: center;
-}
-.flexfooter{
-    display: flex;
-    
-}
-.barra1{
-    background-color:#e07a5f;
-    padding: 20px;
-    margin-top: 0px;
-}
-.fuentes{
-    font-size: 15px;
-    font-weight: 40px;
-}
-.card-title{
-    font-size: 25px;
-    text-align: center;
-}
-.card{
-    padding: 20px;
-    margin: 20px;
-    background-color:#f4f1de;
-}
-
-.tarjetas{
-    display: grid;
-    grid-template-columns:repeat(2, 2fr);
-    justify-content:center;
-}
-@media screen and (max-width: 500px){
-    .tarjetas{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 2fr);
-    }
-    header{
-        width: 100%;
-    }
-    .titulo2{
-        font-size: 20px;
-    }
-    .card-title{
-        font-size: 20px;
-    }
-    .tarjeta-texto{
-        font-size: 15px;
-    }
-   .intro{
-    font-size: 15px;
-   }
-   .li{
-    font-size: 15px;
-   }
-   .titulo4{
-    font-size: 17px;
-   }
-   .P{
-    font-size: 20px;
-   }
-   iframe{
-    width: 400px;
-    justify-self:center;
-   }
-   .grid-galeria{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 2fr);
-   }
-   .galeria-fotos{
-    display: none;
-
-   }
-   .titulo3{
-    display: none;
-   }
-   iframe{
-    width: 85%;
-   }
-
-
-}
-@media screen and (max-width: 768px){
-.tarjetas{
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    align-self: center;
-    margin-left: 70px;
-}
-.pie-de-video{
-    font-size: 18px;
-    margin:20px 15px 18px 15px;
-}
-.formulario{
-   justify-self: center;
-}
-.galeria-fotos{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin: 0;
-    padding: 0;
-}
-.fotos1{
-    display: none;
-}
-.fotos2{
-    width: 200px;
-}
-.fotos3{
-    width: 200px;
-}
-fotos4{
-    display: none;
-}
-
-
-    
 }

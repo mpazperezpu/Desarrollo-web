@@ -8,6 +8,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.jpg"image=icon>
     <!-- Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css"/>
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,19 +19,36 @@
 <body class="cuerpo">
     <div>
     <header class="encabezado">
-        <nav>
         <div class="logo">
         <img width="325px" src="../img/WhatsApp Image 2023-05-09 at 18.58.52.jpeg"><!-- Logo principal -->
         </div>
-            <ul class="menu"> <!--MENU DE NAVEGACION  -->
-                <li class="menu"><a href="../index.html">Inicio</a></li>
-                <li class="menu"><a href="../paginas/Recetas Dulces.html">Recetas Dulces</a></li>
-                <li class="menu"><a href="../paginas/Recetas Saladas.html"> Recetas Saladas</a></li>
-                <li class="menu"><a href="../paginas/Galeria.html">Galeria</a></li>
-                <li class="menu">Contacto</a></li>
-                
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid barra1">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                  <a class="nav-link active fuentes" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" aria-current="page" href="../paginas/Recetas Dulces.html">Recetas Dulces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Recetas Saladas.html">Recetas Saladas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fuentes" href="../paginas/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>        
+    </nav>    
     </header>
     <main>
         <h1 class="titulo1">Contacto</h1> <!-- titulo de la receta -->
