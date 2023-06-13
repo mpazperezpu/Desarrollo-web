@@ -36,7 +36,7 @@ html{
     margin-bottom: 65px;
     margin-left: 20px;
     text-decoration:underline;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 .titulo3{
     color: #3d405b;
@@ -54,14 +54,14 @@ html{
     text-decoration: underline;
     color:#e76f51;
     margin-bottom: 45px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     margin-left: 10px;
 }   
 .listadoprincipal{
     list-style-type:none;
     font-size: 15px;
     margin: 15px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 .ingredientes{
     list-style-type: square;
@@ -94,8 +94,16 @@ div ul li{
     text-align:center;
 }
 .centrarimagen{
-    text-align: center;
     margin: 50px;
+    width: 450px;
+    margin-left: 470px;
+    
+}
+.centrarimagen1{
+    margin: 50px;
+    width: 450px;
+    margin-left: 470px;
+    
 }
 .menu{
     display: inline;
@@ -119,7 +127,7 @@ main p{
 }
 article{
     margin: 20px 10px 40px 35px ;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 h5 li{
     font-size: 20px;
@@ -154,7 +162,7 @@ aside{
 aside p {
     font-size: 20px;
     margin: 15px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     font-weight: lighter;
 }
 #asidep{
@@ -165,7 +173,7 @@ aside p {
 }
 .pie-de-video{
     text-align:justify;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     font-size: 17px;
     align-self: center;
 }
@@ -229,13 +237,13 @@ aside p {
 .Nombre{
     margin: 50px 15px 30px 15px;
    font-size: 18px;
-   font-family: 'Caveat medium 500', cursive;
+   font-family: 'Caveat medium 500', sans-serif;
 }
 form div{
     margin:40px 15px 20px 10px;
     font-size: 20px;
     font-size: 18px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 form input{
     margin:35px 15px 35px 15px;
@@ -297,11 +305,50 @@ footer p{
     display: grid;
     grid-template-columns:repeat(2, 2fr);
     justify-content:center;
+    margin-left: 10px;
 }
+@media screen and (max-width: 768px){
+    .tarjetas{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        align-self: center;
+        width:30rem;
+        
+    }
+    .pie-de-video{
+        font-size: 18px;
+        margin:20px 15px 18px 15px;
+    }
+    .formulario{
+       justify-self: center;
+    }
+    .galeria-fotos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+    .fotos1{
+        display: none;
+    }
+    .fotos2{
+        width: 200px;
+    }
+    .fotos3{
+        width: 200px;
+    }
+    .fotos4{
+        display: none;
+    }
+    
+    
+        
+    }
 @media screen and (max-width: 500px){
     .tarjetas{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 2fr);
+        margin-left: 20px;
     }
     header{
         width: 100%;
@@ -345,42 +392,12 @@ footer p{
    iframe{
     width: 85%;
    }
-
-
-}
-@media screen and (max-width: 768px){
-.tarjetas{
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    align-self: center;
-    margin-left: 70px;
-}
-.pie-de-video{
-    font-size: 18px;
-    margin:20px 15px 18px 15px;
-}
-.formulario{
-   justify-self: center;
-}
-.galeria-fotos{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin: 0;
-    padding: 0;
-}
-.fotos1{
-    display: none;
-}
-.fotos2{
-    width: 200px;
-}
-.fotos3{
-    width: 200px;
-}
-fotos4{
-    display: none;
-}
-
-
-    
+   .centrarimagen1{
+    width:350px ;
+    margin-left: 75px;
+   }
+ .centrarimagen{
+    width: 450px;
+    margin-left: 5px;
+ }
 }
