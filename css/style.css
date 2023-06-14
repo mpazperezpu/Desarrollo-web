@@ -110,6 +110,9 @@ div ul li{
     width: 250px;
     margin-left: 40%;
 }
+.selvanegra{
+    width: 180px;
+}
 
 .menu{
     display: inline;
@@ -358,6 +361,11 @@ footer p{
         margin-right: 5px;
         
     }
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 2fr);
+        margin: 50px 20px 50px 0px; ;
+    }
 }
 @media screen and (max-width: 500px){
     .tarjetas{
@@ -424,7 +432,6 @@ footer p{
     }
  .formulario{
     margin-left: 0%;
-    width: ;
     }
  form{
     width: 85%;
