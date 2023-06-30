@@ -1,3 +1,8 @@
+.titulo3 {
+  text-align: center;
+  color: #3d405b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +32,10 @@
   font-size: 25px;
 }
 
+.titulo1:hover {
+  font: size 40px;
+}
+
 .titulo2 {
   text-align: left;
   font-weight: bolder;
@@ -39,7 +48,6 @@
 }
 
 .titulo3 {
-  color: #3d405b;
   font-family: "Dosis bold 700", sans-serif;
   font-weight: 60px;
   font-size: 22px;
@@ -47,7 +55,6 @@
   margin-left: 10px;
   margin-bottom: 15px;
   background-color: bisque;
-  text-align: center;
 }
 
 .titulo4 {
@@ -57,6 +64,10 @@
   margin-bottom: 45px;
   font-family: "Caveat medium 500", sans-serif;
   margin-left: 10px;
+}
+
+main h1 {
+  transition: 0.5s linear;
 }
 
 .listadoprincipal {
@@ -102,26 +113,38 @@ div ul li {
   text-align: center;
 }
 
-.centrarimagen {
+div .centrarimagen {
   margin-left: 470px;
   margin: 50px;
   text-align: center;
   width: 150px;
 }
-
-.centrarimagen1 {
+div .centrarimagen .selvanegra {
+  width: 250px;
+  margin-left: 470px;
+  margin: 50px;
+  text-align: center;
+  margin-left: 250%;
+}
+div .centrarimagen1 {
   margin-left: 470px;
   margin: 50px;
   text-align: center;
   width: 350px;
+  margin-left: 35%;
+}
+div .centrarimagen2 {
+  width: 180px;
+  margin-left: 200%;
+}
+div .centrarimagen2 .chipa {
+  margin-left: 40%;
+  text-align: center;
 }
 
-.centrarimagen2 {
-  width: 150px;
-  margin-left: 40%;
-}
-.centrarimagen2 .selvanegra {
-  width: 20px;
+.spotify {
+  margin: 0;
+  width: 30px;
 }
 
 .menu {
@@ -200,11 +223,16 @@ aside p {
   font-weight: bolder;
 }
 
+.video {
+  margin: 0;
+}
+
 .pie-de-video {
   text-align: justify;
   font-family: "Caveat medium 500", sans-serif;
   font-size: 17px;
   align-self: center;
+  width: 35px;
 }
 
 .fotos1 {
@@ -354,10 +382,20 @@ footer p {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   justify-content: center;
-  margin-left: 10px;
-  width: 100%;
+  margin-left: 15px;
+  width: 80%;
 }
 
+.selvanegra {
+  animation-name: fotos;
+  animation-duration: 4s;
+}
+
+@keyframes {
+  50% {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 768px) {
   .tarjetas {
     grid-template-columns: 100%;
@@ -397,7 +435,10 @@ footer p {
     margin-left: 60%;
   }
   .alfajor {
-    width: 250px;
+    width: 100%;
+    margin-left: 470px;
+    margin: 50px;
+    text-align: center;
   }
   .chipa {
     width: 250px;

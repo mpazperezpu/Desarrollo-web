@@ -6,6 +6,10 @@ $letra-mediana:'Caveat medium 500', sans-serif;
     margin: 50px;
     text-align: center;
 }
+%titulo{
+    text-align: center;
+    color: #3d405b;
+    }
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +33,13 @@ $letra-mediana:'Caveat medium 500', sans-serif;
     margin-top: 50px;
     font-family: 'Dosis bold 700', sans-serif;
     font-size: 25px;
+
+
 }
+.titulo1:hover{
+    font: size 40px; ;
+}
+
 .titulo2{
     text-align: left;
     font-weight:bolder;
@@ -39,9 +49,9 @@ $letra-mediana:'Caveat medium 500', sans-serif;
     margin-left: 20px;
     text-decoration:underline;
     font-family: 'Caveat medium 500', sans-serif;
+    
 }
 .titulo3{
-    color: #3d405b;
     font-family:$letra-grande;
     font-weight: 60px;
     font-size: 22px;
@@ -49,7 +59,7 @@ $letra-mediana:'Caveat medium 500', sans-serif;
     margin-left: 10px;
     margin-bottom: 15px;
     background-color: bisque;
-    text-align: center;
+   @extend %titulo;
 }
 .titulo4{
     font-size:25px;
@@ -58,7 +68,10 @@ $letra-mediana:'Caveat medium 500', sans-serif;
     margin-bottom: 45px;
     font-family: $letra-mediana;
     margin-left: 10px;
-}   
+} 
+main h1 {
+    transition: .5s linear;
+}  
 .listadoprincipal{
     list-style-type:none;
     font-size: 15px;
@@ -95,26 +108,43 @@ div ul li{
 .logo{
     text-align:center;
 }
-.centrarimagen{
-    @include imagenes();
-    width: 150px;
+div{
+    .centrarimagen{
+        @include imagenes();
+        width: 150px;
     
     
-}
-.centrarimagen1{
-    @include imagenes();
-    width: 350px;
-    
-    
-}
-.centrarimagen2{
 
-    width: 150px;
-    margin-left: 40%;
+        .selvanegra{
+        width: 250px;
+        @include imagenes();
+        margin-left: 250%
+        }
+    
 
-    .selvanegra{
-    width: 20px;
+    }
+
+    .centrarimagen1{
+        @include imagenes();
+        width: 350px;
+        margin-left: 35%;
+    
+    
+    }
+    .centrarimagen2{
+
+        width: 180px;
+        margin-left:200%;
+            .chipa{
+                margin-left: 40%;
+                text-align: center;
+        }
+    }
+
 }
+.spotify{
+    margin: 0;
+    width: 30px;
 }
 
 .menu{
@@ -183,12 +213,18 @@ aside p {
     font-size: 20px;
     color:$my-colour;
     font-weight: bolder;
+    
+}
+.video{
+    margin:0;
+
 }
 .pie-de-video{
     text-align:justify;
     font-family:$letra-mediana;
     font-size: 17px;
     align-self: center;
+    width: 35px;
 }
 .fotos1{
     width: 450px;
@@ -311,14 +347,25 @@ footer p{
     padding: 20px;
     margin: 20px;
     background-color:#f4f1de;
+    
+
 }
 
 .tarjetas{
     display: grid;
     grid-template-columns:repeat(2, 2fr);
     justify-content:center;
-    margin-left: 10px;
-    width: 100%;
+    margin-left: 15px;
+    width: 80%;
+}
+.selvanegra{
+    animation-name: fotos;
+    animation-duration: 4s;
+}
+@keyframes{
+    50%{
+        width:400px
+    }
 }
 @media screen and (max-width: 768px){
     .tarjetas{
@@ -359,7 +406,9 @@ footer p{
         margin-left: 60%;
     }
     .alfajor{
-        width: 250px;
+        width: 100%;
+        @include imagenes();
+        
     }
     .chipa{
         width: 250px;
