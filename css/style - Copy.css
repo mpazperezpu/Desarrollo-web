@@ -1,3 +1,4 @@
+/*# sourceMappingURL=style.css.map */
 html{
     font-size: 62.5%;
 }
@@ -18,7 +19,6 @@ html{
 }
 .titulo1{
     color: #3d405b;
-    background-color:antiquewhite;
     text-align: center;
     padding: 50px;
     margin-bottom: 50px;
@@ -34,7 +34,7 @@ html{
     margin-bottom: 65px;
     margin-left: 20px;
     text-decoration:underline;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 .titulo3{
     color: #3d405b;
@@ -52,14 +52,14 @@ html{
     text-decoration: underline;
     color:#e76f51;
     margin-bottom: 45px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     margin-left: 10px;
 }   
 .listadoprincipal{
     list-style-type:none;
     font-size: 15px;
     margin: 15px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 .ingredientes{
     list-style-type: square;
@@ -92,9 +92,26 @@ div ul li{
     text-align:center;
 }
 .centrarimagen{
-    text-align: center;
     margin: 50px;
+    width: 270px;
+    margin-left: 470px;
+    
 }
+.centrarimagen1{
+    margin: 50px;
+    width: 350px;
+    margin-left: 470px;
+    
+}
+.centrarimagen2{
+
+    width: 250px;
+    margin-left: 40%;
+}
+.selvanegra{
+    width: 180px;
+}
+
 .menu{
     display: inline;
     
@@ -117,7 +134,7 @@ main p{
 }
 article{
     margin: 20px 10px 40px 35px ;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 h5 li{
     font-size: 20px;
@@ -152,7 +169,7 @@ aside{
 aside p {
     font-size: 20px;
     margin: 15px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     font-weight: lighter;
 }
 #asidep{
@@ -163,7 +180,7 @@ aside p {
 }
 .pie-de-video{
     text-align:justify;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
     font-size: 17px;
     align-self: center;
 }
@@ -227,13 +244,13 @@ aside p {
 .Nombre{
     margin: 50px 15px 30px 15px;
    font-size: 18px;
-   font-family: 'Caveat medium 500', cursive;
+   font-family: 'Caveat medium 500', sans-serif;
 }
 form div{
     margin:40px 15px 20px 10px;
     font-size: 20px;
     font-size: 18px;
-    font-family: 'Caveat medium 500', cursive;
+    font-family: 'Caveat medium 500', sans-serif;
 }
 form input{
     margin:35px 15px 35px 15px;
@@ -251,10 +268,10 @@ form{
     margin-left: 15px;
 }
 .grid-galeria{
-    display: grid;
-    grid-template-columns: 50% auto;
-    justify-content:flex-start;
-    margin: 50px 20px 50px 0px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        margin: 50px 20px 50px 0px;
+        
 }
 .redes{
     width: 150px;
@@ -266,4 +283,155 @@ footer p{
 }
 .logo{
     align-self: center;
+}
+.flexfooter{
+    display: flex;
+    
+}
+.barra1{
+    background-color:#e07a5f;
+    padding: 20px;
+    margin-top: 0px;
+}
+.fuentes{
+    font-size: 15px;
+    font-weight: 40px;
+}
+.card-title{
+    font-size: 25px;
+    text-align: center;
+}
+.card{
+    padding: 20px;
+    margin: 20px;
+    background-color:#f4f1de;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns:repeat(2, 2fr);
+    justify-content:center;
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px){
+    .tarjetas{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        align-self: center;
+        width:30rem;
+        margin-left: 10%;
+    }
+    .pie-de-video{
+        font-size: 18px;
+        margin:20px 15px 18px 15px;
+    }
+    .formulario{
+       margin-left: 150px;
+    }
+    .titulo3{
+        display: none;
+    }
+    .galeria-fotos{
+        display: none;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(9, 1fr);
+    }
+    .fotos{
+        width: 200px;
+    }
+    .centrarimagen{
+        margin: 15px;
+        width: 270px;}
+
+    .centrarimagen1{
+        margin-left: 200px;
+    }
+    .selvanegra{
+        width: 250px;
+        align-self: center;
+        margin-left: 60%;
+    }
+    .alfajor{
+        width: 250px;
+    }
+    .chipa{
+        width: 250px;
+        margin-right: 5px;
+        
+    }
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 2fr);
+        margin: 50px 20px 50px 0px; ;
+    }
+}
+@media screen and (max-width: 500px){
+    .tarjetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 2fr);
+        margin-left: 70px;
+    }
+    header{
+        width: 100%;
+    }
+    .titulo2{
+        font-size: 20px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .tarjeta-texto{
+        font-size: 15px;
+    }
+   .intro{
+    font-size: 15px;
+   }
+   .li{
+    font-size: 15px;
+   }
+   .titulo4{
+    font-size: 17px;
+   }
+   .P{
+    font-size: 20px;
+   }
+   iframe{
+    width: 400px;
+    justify-self:center;
+   }
+   .grid-galeria{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr);
+    margin: 50px 20px 50px 0px; ;
+   }
+   .galeria-fotos{
+    display: none;
+    }
+   .titulo3{
+    display: none;
+   }
+   iframe{
+    width: 85%;
+   }
+   .centrarimagen1{
+    width:350px ;
+    margin-left: 75px;
+   }
+ .selvanegra{
+    width: 200px;
+    margin-left: 45%;
+    }
+ .alfajor{
+    width: 250px;
+    }
+ .chipa{
+    width: 200px;
+   margin-left: 0;
+    }
+ .formulario{
+    margin-left: 0%;
+    }
+ form{
+    width: 85%;
+    }
 }
